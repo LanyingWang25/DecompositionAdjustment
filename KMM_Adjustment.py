@@ -143,3 +143,26 @@ def Adjust_sc(sc_exp, sc_meta, st_exp, cts_genes, kernel_type='rbf', gamma=None,
     sc_Adjusted = sc_adjust_all_Tmp.loc[sc_expT.index.tolist(), sc_expT.columns.tolist()].T
     print('The Adjusted scRNA-seq data has : %d genes * %d cells' % (sc_Adjusted.shape))
     return sc_Adjusted
+
+
+
+
+
+
+
+# Data Adjustment for Simulated data I
+import pandas as pd
+import os
+import KMM_Adjustment
+
+# Simulated data I
+data_path = '../Datasets/Simulated data I/simulated st/'
+SC_exp = pd.read_csv(os.path.join(data_path, 'SC_exp.csv'), sep=',', index_col=0)
+SC_meta = pd.read_csv(os.path.join(data_path, 'SC_meta.csv'), sep=',', index_col=0)
+ST_Simulated_exp = pd.read_csv(os.path.join(data_path, 'ST_Simulated_exp.csv'), sep=',', index_col=0)
+CTS_genes = pd.read_csv(os.path.join(data_path, 'CTS_genes.csv'), sep=',', index_col=0)
+
+Adjusted_sc = KMM_Adjustment.Adjust_sc(sc_exp=SC_exp, st_exp=ST_Simulated_exp, sc_meta=SC_meta, cts_genes = CTS_genes, kernel_type='rbf', gamma=None, B=2.0, eps=None)
+Adjusted_sc.to_csv(os.path.join(data_path, 'SC_exp_Adjusted.csv'), sep=',', index=True, header=True)
+
+

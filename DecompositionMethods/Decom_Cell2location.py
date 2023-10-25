@@ -1,11 +1,11 @@
 """
-We referred to the script of Cell2location in reference [1]:
+The decomposition of Cell2location methods.
 
-pip install cell2location in https://pypi.org/project/cell2location/ in reference [2]
+We downloaded cell2location in https://pypi.org/project/cell2location/ and refered the decomposition code from [2].
 
 References:
-[1] Chen J, Liu W, Luo T, Yu Z, Jiang M, et al. A comprehensive comparison on cell-type composition inference for spatial transcriptomics data. Brief Bioinform. 2022 Jul 18;23(4):bbac245. doi: 10.1093/bib/bbac245. PMID: 35753702; PMCID: PMC9294426.
-[2] Kleshchevnikov, V., Shmatko, A., Dann, E. Aivazidis, A. King, HW. et al. Cell2location maps fine-grained cell types in spatial transcriptomics. Nat Biotechnol 40, 661–671 (2022).doi:10.1038/s41587-021-01139-4.
+[17] Chen J, Liu W, Luo T, Yu Z, Jiang M, Wen J, et al. A comprehensive comparison on cell-type composition inference for spatial transcriptomics data. Brief Bioinform. 2022;23(4):bbac245. doi:10.1093/bib/bbac245.
+[25] Kleshchevnikov V, Shmatko A, Dann E, Aivazidis A, King HW, Li T, et al. Cell2location maps fine-grained cell types in spatial transcriptomics. Nat Biotechnol. 2022;40(5):661–671. doi:10.1038/s41587-021-01139-4.
 """
 
 import os

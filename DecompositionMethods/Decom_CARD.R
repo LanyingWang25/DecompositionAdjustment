@@ -5,7 +5,7 @@ if(FALSE){
   The decomposition of CARD methods.
   We downloaded CARD from https://github.com/YingMa0107/CARD and followed the instructions in https://yingma0107.github.io/CARD/documentation/04_CARD_Example.html.
   reference:
-  [21] Ma Y, Zhou X. Spatially informed cell-type deconvolution for spatial transcriptomics. Nat Biotechnol. 2022;40(9):1349–1359. doi:10.1038/s41587-022-01273-7
+  [21] Ma Y, Zhou X. Spatially informed cell-type deconvolution for spatial transcriptomics. Nat Biotechnol. 2022;40(9):1349–1359. doi:10.1038/s41587-022-01273-7.
   "
 }
 
@@ -43,7 +43,7 @@ Decom_CARD <- function(sc_exp, sc_meta, st_exp, st_xy){
 
 
 
-data_path <- '../Data Adjustment_Datasets/Simulated data I/'
+data_path <- '../Datasets/Simulated data I/'
 
 sc_exp <- read.csv(paste0(data_path, 'simulated st/SC_exp.csv'), header = T, row.names = 1, check.names = F)
 sc_meta <- read.csv(paste0(data_path, 'simulated st/SC_meta.csv'), header = T, row.names = 1, check.names = F)

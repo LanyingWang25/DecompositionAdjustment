@@ -5,7 +5,7 @@ if(FALSE){
   The decomposition of SpatialDWLS methods.
   We downloaded SpatialDWLS in https://github.com/RubD/Giotto and followed the guidelines on https://github.com/rdong08/spatialDWLS_dataset.
   reference:
-  [20] Dong R, Yuan G-C. SpatialDWLS: accurate deconvolution of spatial transcriptomic data. Genome Biol. 2021;22(1):145. doi:10.1186/s13059-021-02362-7
+  [20] Dong R, Yuan G-C. SpatialDWLS: accurate deconvolution of spatial transcriptomic data. Genome Biol. 2021;22(1):145. doi:10.1186/s13059-021-02362-7.
   "
 }
 
@@ -60,7 +60,7 @@ Decom_SpatialDWLS <- function(sc_exp, sc_meta, st_exp, st_xy){
 
 
 
-data_path <- '../Data Adjustment_Datasets/Simulated data I/'
+data_path <- '../Datasets/Simulated data I/'
 
 sc_exp <- read.csv(paste0(data_path, 'simulated st/SC_exp.csv'), header = T, row.names = 1, check.names = F)
 sc_meta <- read.csv(paste0(data_path, 'simulated st/SC_meta.csv'), header = T, row.names = 1, check.names = F)

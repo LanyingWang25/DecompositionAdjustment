@@ -5,7 +5,7 @@ if(FALSE){
   The decomposition of SPOTlight methods.
   We downloaded SPOTlight v0.1.7 from https://github.com/MarcElosua/SPOTlight.
   reference:
-  [19] Elosua-Bayes M, Nieto P, Mereu E, Gut I, Heyn H. SPOTlight: seeded NMF regression to deconvolute spatial transcriptomics spots with single-cell transcriptomes. Nucleic Acids Res. 2021;49(9):e50. doi:10.1093/nar/gkab043
+  [19] Elosua-Bayes M, Nieto P, Mereu E, Gut I, Heyn H. SPOTlight: seeded NMF regression to deconvolute spatial transcriptomics spots with single-cell transcriptomes. Nucleic Acids Res. 2021;49(9):e50. doi:10.1093/nar/gkab043.
   "
 }
 
@@ -67,7 +67,7 @@ Decom_SPOTlight <- function(sc_exp, sc_meta, st_exp, st_xy){
 
 
 
-data_path <- '../Data Adjustment_Datasets/Simulated data I/'
+data_path <- '../Datasets/Simulated data I/'
 
 sc_exp <- read.csv(paste0(data_path, 'simulated st/SC_exp.csv'), header = T, row.names = 1, check.names = F)
 sc_meta <- read.csv(paste0(data_path, 'simulated st/SC_meta.csv'), header = T, row.names = 1, check.names = F)

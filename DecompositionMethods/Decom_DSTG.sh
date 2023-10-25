@@ -1,9 +1,14 @@
-# we used DSTG GitHub repository from https://github.com/Su-informatics-lab/DSTG from reference [1]
-# [1] Qianqian Song, Jing Su, DSTG: deconvoluting spatial transcriptomics data through graph-based artificial intelligence, Briefings in Bioinformatics, Volume 22, Issue 5, September 2021, bbaa414, doi: 10.1093/bib/bbaa414.
 
-sc_exp_path='../Data Adjustment_Datasets/Simulated data I/simulated st/SC_exp.rds'
-sc_meta_path='../Data Adjustment_Datasets/Simulated data I/simulated st/SC_meta.rds'
-st_exp_path='../Data Adjustment_Datasets/Simulated data I/simulated st/ST_exp.rds'
+# The decomposition of DSTG methods.
+
+# we downloaded DSTG from https://github.com/Su-informatics-lab/DSTG.
+
+# reference:
+# [27] Song Q, Su J. DSTG: deconvoluting spatial transcriptomics data through graph-based artificial intelligence. Brief Bioinform. 2021;22(5):bbaa414. doi:10.1093/bib/bbaa414.
+
+sc_exp_path='../Datasets/Simulated data I/simulated st/SC_exp.rds'
+sc_meta_path='../Datasets/Simulated data I/simulated st/SC_meta.rds'
+st_exp_path='../Datasets/Simulated data I/simulated st/ST_exp.rds'
 
 out_dir='DSTG_res/'
 madir out_dir

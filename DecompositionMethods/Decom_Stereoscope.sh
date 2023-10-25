@@ -1,9 +1,14 @@
-# we followed the instructions of stereoscope from https://github.com/almaan/stereoscope in [1]
-# [1] Andersson A, Bergenstråhle J, Asp M, Bergenstråhle L, Jurek A, Fernández Navarro J, et al. Single-cell and spatial transcriptomics enables probabilistic inference of cell type topography. Commun Biol. 2020;3: 565. doi:10.1038/s42003-020-01247-y.
 
-sc_exp_path='../Data Adjustment_Datasets/Simulated data I/simulated st/SC_exp.tsv'
-sc_meta_path='../Data Adjustment_Datasets/Simulated data I/simulated st/SC_meta.tsv'
-st_exp_path='../Data Adjustment_Datasets/Simulated data I/simulated st/ST_exp.tsv'
+# The decomposition of stereoscope methods.
+
+# we downloaded stereoscope from https://github.com/almaan/stereoscope
+
+# reference:
+# [23] Andersson A, Bergenstråhle J, Asp M, Bergenstråhle L, Jurek A, Fernández Navarro J, et al. Single-cell and spatial transcriptomics enables probabilistic inference of cell type topography. Commun Biol. 2020;3(1):565. doi:10.1038/s42003-020-01247-y
+
+sc_exp_path='../Datasets/Simulated data I/simulated st/SC_exp.tsv'
+sc_meta_path='../Datasets/Simulated data I/simulated st/SC_meta.tsv'
+st_exp_path='../Datasets/Simulated data I/simulated st/ST_exp.tsv'
 
 out_dir='Stereoscope_res/'
 

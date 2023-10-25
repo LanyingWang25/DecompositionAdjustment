@@ -5,7 +5,7 @@ if(FALSE){
   The decomposition of RCTD methods.
   We downloaded RCTD from https://github.com/dmcable/spacexr.
   reference:
-  [24] Cable DM, Murray E, Zou LS, Goeva A, Macosko EZ, Chen F, et al. Robust decomposition of cell type mixtures in spatial transcriptomics. Nat Biotechnol. 2022;40(4):517–526. doi:10.1038/s41587-021-00830-w
+  [24] Cable DM, Murray E, Zou LS, Goeva A, Macosko EZ, Chen F, et al. Robust decomposition of cell type mixtures in spatial transcriptomics. Nat Biotechnol. 2022;40(4):517–526. doi:10.1038/s41587-021-00830-w.
   "
 }
 
@@ -58,7 +58,7 @@ Decom_RCTD <- function(sc_exp, sc_meta, st_exp, st_xy){
 
 
 
-data_path <- '../Data Adjustment_Datasets/Simulated data I/'
+data_path <- '../Datasets/Simulated data I/'
 
 sc_exp <- read.csv(paste0(data_path, 'simulated st/SC_exp.csv'), header = T, row.names = 1, check.names = F)
 sc_meta <- read.csv(paste0(data_path, 'simulated st/SC_meta.csv'), header = T, row.names = 1, check.names = F)
